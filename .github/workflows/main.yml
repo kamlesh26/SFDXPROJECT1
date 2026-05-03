@@ -66,11 +66,11 @@ jobs:
     #    uses: sfdx-actions/setup-sfdx@v1
     #    with:
           # Authorize a Salesforce org using an SFDX auth URL
-      #    sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
+      #    sfdx-auth-url: ${{ secrets.AGENTFORCE_CICD_URL }}
 
       #Sets the default devhub org for us to create scratch orgs and packages against
       # - name: Set Default DevHub
-      #  run: sfdx force:config:set defaultdevhubusername=anthony.wheeler@sfdx.course.com
+      #  run: sfdx force:config:set defaultdevhubusername=kamlesh.verma26.a5c284c2d5b6@agentforce.com
 
       # Generates new Package Version Number based on the last released version of the package
       # - name: Creating Package Version
