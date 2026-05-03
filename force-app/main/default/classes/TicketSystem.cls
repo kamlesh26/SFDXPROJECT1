@@ -1,7 +1,34 @@
+/**
+ * Class Name    : TicketSystem
+ * Description   : Handles ticket creation by integrating Salesforce with Freshdesk API.
+ * Author        : Kamlesh Verma
+ * Created Date  : 03 May 2026
+ *
+ * Method        : createTicket
+ * Description   : Creates a support ticket in Freshdesk using REST API callout.
+ *
+ * Parameters    :
+ *   - sub        (String)  : Subject of the ticket
+ *   - email      (String)  : Requester email address
+ *   - description(String)  : Detailed description of the issue
+ *   - priorty    (Integer) : Priority of the ticket (e.g., 1-Low, 2-Medium, 3-High, 4-Urgent)
+ *   - status     (Integer) : Status of the ticket (e.g., 2-Open, 3-Pending, etc.)
+ *
+ * Returns       :
+ *   - String : Ticket ID if successfully created, otherwise empty string
+ *
+ * Notes         :
+ *   - Requires Remote Site Setting or Named Credential (freshDesk)
+ *   - Uses HTTP POST callout with JSON body
+ *   - Handles basic error scenarios and unauthorized endpoint issues
+ *
+ * Modification Log:
+ * -----------------------------------------------------------
+ * Version   Date         Author          Description
+ * 1.0       03-05-2026   Kamlesh Verma   Initial Version
+ */
 public class TicketSystem {
-
-    
-    
+      
      public static String createTicket(String sub, String email, String description, Integer priorty, Integer status){
 
         String errorMessage = '';
