@@ -29,7 +29,7 @@ jobs:
       uses: sfdx-actions/setup-sfdx@v1
       with:
         # Authorize a Salesforce org using an SFDX auth URL
-        sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
+        sfdx-auth-url: ${{ secrets.AGENTFORCE_CICD_URL }}
         
     # Sets the default devhub org for us to create scratch orgs and packages against
     - name: Set Default DevHub
